@@ -1,4 +1,10 @@
 Voornaam;Naam;Affiliatie;E-mail;Website;MijnKolom;
-AuteurVoornaam;AuteurNaam;AuteurAffiliatie;auteurvoornaam.auteurnaam@auteurdomein;https://auteurwebsiteurl;A;
-EditorVoornaam;EditorNaam;EditorAffiliatie;editorvoornaam.editornaam@editordomein;https://editorwebsiteurl;E;
+Sitt;Min Oo;imec-IDLab-UGent;x.sittminoo@ugent.be;https://www.sminoo.be/;A;
+Ben;De Meester;imec-IDLab-UGent;ben.demeester@ugent.be;https://example.com/;A;
+Martin;Vanbrabant;imec-IDLab-UGent;martin.vanbrabant@ugent.be;https://example.com/;A;
+Dimitri;Schepers;Digitaal Vlaanderen;dimitri.schepers@vlaanderen.be;https://example.com/;A;
+Eveline;Vlassenroot;Digitaal Vlaanderen;eveline.vlassenroot@vlaanderen.be;https://example.com/;A;
+Liesbeth;Meeus;imec;liesbeth.meeus@imec.be;https://example.com/;A;
+Lien;De Bie;imec;lien.debie@imec.be;https://example.com/;A;
+Sitt;Min Oo;imec-IDLab-UGent;x.sittminoo@ugent.be;https://www.sminoo.be/;E;
 MedewerkerVoornaam;MedewerkerNaam;MedewerkerAffiliatie;medewerkervoornaam.medewerkernaam@medewerkerdomein;https://medewerkerwebsiteurl;C;
