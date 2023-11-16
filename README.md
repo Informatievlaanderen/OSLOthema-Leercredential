@@ -1,5 +1,7 @@
 # OSLOthema-Leercredential
 
+This repo is based on the works of [SolidThema-leercredentials](https://github.com/Informatievlaanderen/SolidThema-leercredential/tree/master).
+
 **_Editors:_**
 - first read [deze richtlijnen](https://github.com/Informatievlaanderen/OSLO-toolchain/blob/master/doc-user/README.md) .
 - Use [TagsAndNotes.xlsm](https://github.com/Informatievlaanderen/OSLO-allerleiTooltjes/tree/master/EA-Excel/TagsAndNotes) 
