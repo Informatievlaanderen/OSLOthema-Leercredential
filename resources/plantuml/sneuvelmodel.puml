@@ -1,0 +1,56 @@
+
+@startuml
+skinparam nodesep 150
+skinparam linetype ortho
+allowmixing
+
+class Organisatie
+class Leerclaim
+class Leercredential
+
+class Persoon
+class Groep
+together{
+    class Leeractiviteit
+    class ToegekendRecht
+}
+class GeregistreerdPersoon
+class LeeractiviteitSpecificatie
+class LeerprestatieSpecificatie
+class ToegekendRechtSpecificatie
+class Kwalificatie
+'class Studentenkaart
+'class Inschrijvingsbewijs
+
+
+node a
+hide a
+
+Leerclaim  -[hidden]- Groep
+Organisatie "uitgever 1" <-- Leerclaim
+Organisatie "uitgever 1" <--  Leercredential
+Organisatie  --  Organisatie
+
+Persoon <|-- GeregistreerdPersoon: " registratie"
+Groep "0..*" <-- Persoon: "isGroepslidVan"
+Leercredential  --  Leercredential
+Leercredential "heeftCredential \n 0..*"-r-"\t\t eigenaar 1" Persoon
+
+Persoon -r->"heeftClaim \n 1" Leerclaim
+Leeractiviteit -[hidden]- ToegekendRecht
+Leerclaim <|-r- Leeractiviteit
+Leerclaim <|-r- ToegekendRecht
+
+
+Leeractiviteit -r-> "1" LeeractiviteitSpecificatie: "specificatie"
+LeeractiviteitSpecificatie "beïnvloedDoor 0..*" <--> "beïnvloedt 0..*"LeerprestatieSpecificatie
+LeerprestatieSpecificatie "resultaatVan 0..*" <--> "geeftRechtOp 0..*" ToegekendRechtSpecificatie
+
+ToegekendRecht -r-> ToegekendRechtSpecificatie
+ToegekendRechtSpecificatie <|-- Kwalificatie
+'Studentenkaart --|> Leercredential
+'Inschrijvingsbewijs --|> Leercredential
+
+
+
+@enduml

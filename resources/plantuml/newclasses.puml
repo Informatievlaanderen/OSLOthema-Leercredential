@@ -1,0 +1,80 @@
+
+@startuml
+skinparam nodesep 150
+skinparam linetype ortho
+allowmixing
+
+class ToekenningsProcess #yellowgreen{
+    + identificator: Identificator [0..*]
+    + toekenningsDatum: DateTime [0..1]
+    + nationaalSysteemNota: TaalString [0..1]
+    + beschrijfving: TaalString  [0..1]
+    + extraInformatie: String [0..*]
+    + locatie: Locatie [0..1]
+
+}
+together{
+class Studentenkaart #yellowgreen  {
+    + identificator: Identificator
+    + uitgaveDatum:  DateTime
+    + vervalDatum:   DateTime
+
+}
+class Inschrijvingsbewijs #yellowgreen {
+    + academischeJaar: Year
+    + contractType: ContractType [1..*]
+    + inschrijvingsDatum: DateTime
+    + leeractiviteiten: Leeractiviteit [1..*]
+}
+}
+class Persoon 
+class Groep
+class Leercredential
+together{
+    class Leeractiviteit
+    class ToegekendRecht
+}
+class GeregistreerdPersoon
+class Organisatie
+class Leerclaim
+class LeeractiviteitSpecificatie
+class LeerprestatieSpecificatie
+class ToegekendRechtSpecificatie
+class Kwalificatie
+
+
+class a
+hide a 
+
+Leerclaim  -[hidden]- Groep
+Organisatie "uitgever 1" <-- Leerclaim
+ToekenningsProcess "toegekendDoor 1" <---> "kentToe 0..*" Leerclaim
+ToekenningsProcess --->"uitgevoerdDoor 1..*" Organisatie
+
+Persoon <|-- GeregistreerdPersoon: " registratie"
+Groep "0..*" <-- Persoon: "isGroepslidVan"
+Leercredential  -[norank]-  Leercredential
+Leercredential "heeftCredential \n 0..*"-r-"\t\t eigenaar 1" Persoon
+Organisatie "uitgever 1" <--  Leercredential
+Organisatie  -[norank]-  Organisatie
+
+Persoon -r->"heeftClaim \n 1" Leerclaim
+Leeractiviteit -[hidden]- ToegekendRecht
+Leerclaim <|-r- Leeractiviteit
+Leerclaim <|-r- ToegekendRecht
+
+
+Leeractiviteit -r-> "1" LeeractiviteitSpecificatie: "specificatie"
+LeeractiviteitSpecificatie "beïnvloedDoor 0..*" <--> "beïnvloedt 0..*"LeerprestatieSpecificatie
+LeerprestatieSpecificatie "resultaatVan 0..*" <--> "geeftRechtOp 0..*" ToegekendRechtSpecificatie
+
+ToegekendRecht -r-> ToegekendRechtSpecificatie
+ToegekendRechtSpecificatie <|-- Kwalificatie
+
+
+Studentenkaart -u--|> Leercredential
+Inschrijvingsbewijs -u--|> Leercredential
+
+
+
+@enduml
