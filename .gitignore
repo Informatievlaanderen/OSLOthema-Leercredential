@@ -1,6 +1,8 @@
 .idea
+*-backup.eap
+*-last.eap
 *.ldb
 *.xlsm
-*-backup.eap
 OSLO-leerinschrijfcredential-AP.eap
-*-last.eap
+report_*
+target/
