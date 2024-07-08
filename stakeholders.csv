@@ -1,4 +1,4 @@
-Voornaam;Naam;Affiliatie;E-mail;Website;Leerinschrijfcredentials;Leercredentials
+Voornaam;Naam;Affiliatie;E-mail;Website;MijnKolom;
 Dimitri;Schepers;Athumi;dimitri.schepers@athumi.eu;https://data.vlaanderen.be/id/organisatie/OVO051320;A;
 Rob;Van Hooreweder;Athumi;rob.vanhooreweder@athumi.eu;https://data.vlaanderen.be/id/organisatie/OVO051320;A;
 Kurt;Ryckaert;Athumi;kurt.ryckaert@athumi.eu;https://data.vlaanderen.be/id/organisatie/OVO051320;A;
@@ -26,7 +26,7 @@ Laura;Devriendt;Lemon Companies;;https://www.lemon.be/;C;
 Michael;Schoenmaekers;Lemon Companies;;https://www.lemon.be/;C;
 Hilde;Vanhaute;Katholieke Universiteit Leuven;;https://www.kuleuven.be/;C;
 Laura;Van Dievel;Manpower;;https://www.manpower.be/;C;
-Sylvie;Flamée;Manpower;;https://www.manpower.be/;C;
+Sylvie;FlamÃ©e;Manpower;;https://www.manpower.be/;C;
 Jan;Bisschops;Odisee;;https://www.odisee.be/;C;
 Sophie;Duhayon;Onderwijskoepel Steden en Gemeenten OVSG;;https://www.ovsg.be/;C;
 Nick;Coucke;Plantyn;;https://www.plantynacademy.be/;C;
@@ -41,10 +41,10 @@ Veerle;Beyaert;Digitaal Vlaanderen;veerle.beyaert@vlaanderen.be;https://data.vla
 Eveline;Vlassenroot;Digitaal Vlaanderen;eveline.vlassenroot@vlaanderen.be;https://data.vlaanderen.be/id/organisatie/OVO002949;E;
 Liesbeth;Van der Haegen;Digitaal Vlaanderen;liesbeth.vanderhaegen@vlaanderen.be;https://data.vlaanderen.be/id/organisatie/OVO002949;E;
 Laurens;Vercauteren;Digitaal Vlaanderen;laurens.vercauteren@vlaanderen.be;https://data.vlaanderen.be/id/organisatie/OVO002949;E;
-Sitt;Min Oo;imec-IDLab-UGent;x.sittminoo@ugent.be;https://knows.idlab.ugent.be/;;E
-Ben;De Meester;imec-IDLab-UGent;ben.demeester@ugent.be;https://knows.idlab.ugent.be/;;A
-Martin;Vanbrabant;imec-IDLab-UGent;martin.vanbrabant@ugent.be;https://knows.idlab.ugent.be/;;A
-Dimitri;Schepers;Digitaal Vlaanderen;dimitri.schepers@vlaanderen.be;https://data.vlaanderen.be/id/organisatie/OVO002949;;A
-Eveline;Vlassenroot;Digitaal Vlaanderen;eveline.vlassenroot@vlaanderen.be;https://data.vlaanderen.be/id/organisatie/OVO002949;;A
-Liesbeth;Meeus;imec;liesbeth.meeus@imec.be;https://www.imec.be/nl;;A
-Lien;De Bie;imec;lien.debie@imec.be;https://www.imec.be/nl;;A
+Sitt;Min Oo;imec-IDLab-UGent;x.sittminoo@ugent.be;https://knows.idlab.ugent.be/;E;
+Ben;De Meester;imec-IDLab-UGent;ben.demeester@ugent.be;https://knows.idlab.ugent.be/;A;
+Martin;Vanbrabant;imec-IDLab-UGent;martin.vanbrabant@ugent.be;https://knows.idlab.ugent.be/;A;
+Dimitri;Schepers;Digitaal Vlaanderen;dimitri.schepers@vlaanderen.be;https://data.vlaanderen.be/id/organisatie/OVO002949;A;
+Eveline;Vlassenroot;Digitaal Vlaanderen;eveline.vlassenroot@vlaanderen.be;https://data.vlaanderen.be/id/organisatie/OVO002949;A;
+Liesbeth;Meeus;imec;liesbeth.meeus@imec.be;https://www.imec.be/nl;A;
+Lien;De Bie;imec;lien.debie@imec.be;https://www.imec.be/nl;A;
