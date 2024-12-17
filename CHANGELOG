@@ -3,3 +3,16 @@
     - hernoemd: UML package naar OSLO-Leercredential
     - toegevoegd: label "Voorstelling" aan https://data.vlaanderen.be/ns/leercredential#Voorstelling
     - toegevoegd: label "Organisatie Classificatie" aan skos:Concept OrganisatieClassificatie
+
+2024-12-17
+- URI toegevoegd bij validatiedatum in plaats van leeg: http://www.w3.org/2001/XMLSchema#dateTime
+- Range resetting for: (Model:Model:OSLO-Organisatie:Organisatie:voorkeursnaam).
+- Range resetting for: (Model:Model:OSLO-Persoon:GeregistreerdPersoon:registratie).
+- Range resetting for: (Model:Model:OSLO-Persoon:Persoon:achternaam).
+- Range resetting for: (Model:Model:OSLO-Persoon:Persoon:voornaam).
+- Range resetting for: (Model:Model:OSLO-Persoon:Persoon:patroniem).
+- Range resetting for: (Model:Model:OSLO-Organisatie:Organisatie:alternatieveNaam).
+- Range resetting for: (Model:Model:OSLO-Organisatie:Organisatie:vestiging).
+- Range resetting for: (Model:Model:OSLO-Organisatie:Organisatie:logo).
+- Range resetting for: (Model:Model:OSLO-Persoon:Persoon:geboortenaam).
+- Range resetting for: (Model:Model:OSLO-Leercredential:Leercredential:bijvoegsel).
